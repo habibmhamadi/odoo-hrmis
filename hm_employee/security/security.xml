@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.module.category" id="hm_employee.employee_category_root">
+        <field name="name">Employee</field>
+        <field name="sequence">1</field>
+    </record>
+
+    <record id="group_hr_user" model="res.groups">
+        <field name="name">User</field>
+        <field name="category_id" ref="hm_employee.employee_category_root"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    </record>
+
+    <record id="group_hr_officer" model="res.groups">
+        <field name="name">Officer</field>
+        <field name="category_id" ref="hm_employee.employee_category_root"/>
+        <field name="implied_ids" eval="[(4, ref('hm_employee.group_hr_user'))]"/>
+    </record>
+
+    <record id="group_hr_admin" model="res.groups">
+        <field name="name">Administrator</field>
+        <field name="category_id" ref="hm_employee.employee_category_root"/>
+        <field name="implied_ids" eval="[(4, ref('hm_employee.group_hr_officer'))]"/>
+    </record>
+
+</odoo>
