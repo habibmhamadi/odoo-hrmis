@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_hm_contract_hm_contract,hm_contract.hm_contract,model_hm_contract_hm_contract,base.group_user,1,1,1,1
+access_contract_contract_user,access.contract.contract.user,model_contract_contract,hm_contract.group_contract_user,1,0,0,0
+access_contract_contract_officer,access.contract.contract.officer,model_contract_contract,hm_contract.group_contract_officer,1,1,1,1
+access_contract_contract_admin,access.contract.contract.admin,model_contract_contract,hm_contract.group_contract_admin,1,1,1,1

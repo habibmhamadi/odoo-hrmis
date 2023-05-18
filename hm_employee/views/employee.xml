@@ -127,7 +127,7 @@
         <field name="name">employee.employee.view.kanban</field>
         <field name="model">employee.employee</field>
         <field name="arch" type="xml">
-            <kanban quick_create="false">
+            <kanban quick_create="false" records_draggable="false">
               <field name="name" />
               <field name="image" />
               <field name="job_id" />

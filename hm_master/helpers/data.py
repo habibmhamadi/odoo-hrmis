@@ -54,3 +54,19 @@ EMP_DOC_TYPES = [
     ('identity', 'Identity'),
     ('other', 'Other')
 ]
+
+CONTRACT_STATES = [
+    ('draft', 'Draft'),
+    ('hr_approval', 'HR Approval'),
+    ('director_approval', 'Director Approval'),
+    ('running', 'Running'),
+    ('foreshorten', 'Foreshorten'),
+    ('expired', 'Expired'),
+    ('separated', 'Separated'),
+    ('cancelled', 'Cancelled')
+]
+
+RENEWAL_TYPES = [
+    ('new', 'New'),
+    ('extension', 'Extension')
+]
